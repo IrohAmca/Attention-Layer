@@ -1,0 +1,1 @@
+To download word to vec file follow this link: https://www.kaggle.com/code/madz2000/nlp-using-glove-embeddings-99-87-accuracy/input
