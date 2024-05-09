@@ -1,14 +1,13 @@
 from Attention import Attention
-#%%
-# İnitiate the class
-attent=Attention(0)
-#%%
-attent.soft_attention("this is a test")
-attent.print_vector_to_json()
-#%%
 import torch
 from torch import nn
+#%%
+attent=Attention(25)
+#%%
+attent.forward("once upan a time in hollywood is a great movie and i love it so much",attention_type="hard")
+attent.print_vector_to_json()
 
+#%%
 class TextProcessingModel(nn.Module):
     def __init__(self, attention_dim,num_classes, glove_path):
         super(TextProcessingModel, self).__init__()
